@@ -40,7 +40,7 @@ export default function Home({ wpServices }) {
             </Head>
             <PublicLayout>
                 <HomeWelcome />
-                {/* <HomeListPosts posts={wpServices} /> */}
+                <HomeListPosts posts={wpServices} />
                 <HomeScrollText />
                 <HomeCtaRx />
                 <HomeServicios />
