@@ -36,6 +36,7 @@ export const PublicNav = () => {
                                     height={70}
                                     alt="Logo de RemoteSquid OU"
                                     className="w-10 h-10 lg:w-16 lg:h-16"
+                                    priority
                                 />
                             </Link>
                         </div>
