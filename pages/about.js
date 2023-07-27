@@ -1,8 +1,8 @@
-import { AboutHistoria } from "@/components/public/About-Historia";
-import { HomeCalculadora } from "@/components/public/Home-Calculadora";
-import HomeServicios from "@/components/public/Home-Servicios";
-import PublicLayout from "@/layouts/PublicLayout";
 import Head from "next/head";
+import PublicLayout from "@/layouts/PublicLayout";
+import AboutHistoria from "@/components/public/About-Historia";
+import HomeCalculadora from "@/components/public/Home-Calculadora";
+import HomeServicios from "@/components/public/Home-Servicios";
 
 export default function About() {
     return (

@@ -38,7 +38,7 @@ const calcserv = [
     },
 ];
 
-export const HomeCalculadora = ({ title = "Calcula tu presupuesto web" }) => {
+const HomeCalculadora = ({ title = "Calcula tu presupuesto web" }) => {
     return (
         <div className="my-10 lg:my-20">
             <div className="relative flex items-center justify-center z-1 h-48 lg:h-60 overflow-hidden">
@@ -89,3 +89,5 @@ export const HomeCalculadora = ({ title = "Calcula tu presupuesto web" }) => {
         </div>
     );
 };
+
+export default HomeCalculadora;
