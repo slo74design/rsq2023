@@ -1,8 +1,14 @@
 import Image from "next/image";
+
+import PublicLayout from "@/layouts/PublicLayout";
 import { Inter } from "next/font/google";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
-    return <h1>sasa</h1>;
+    return (
+        <PublicLayout>
+            <h1>Remote</h1>
+        </PublicLayout>
+    );
 }
