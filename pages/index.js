@@ -17,8 +17,8 @@ export default function Home({ wpServices }) {
     return (
         <div>
             <Head>
-                {/* <title>{wpHome.seoTitle}</title>
-                <meta name="description" content={wpHome.seoDescription} />
+                {/* <title>{wpHome.seoTitle}</title> */}
+                {/* <meta name="description" content={wpHome.seoDescription} /> */}
                 <meta name="google" content="nositelinkssearchbox" />
                 <meta name="google" content="nopagereadaloud" />
                 <meta name="robots" content="index, follow" />
@@ -27,12 +27,12 @@ export default function Home({ wpServices }) {
                     content="width=device-width, initial-scale=1.0"
                 />
                 <meta charSet="utf-8" />
-                <meta property="og:title" content={wpHome.seoTitle} />
-                <meta
+                {/* <meta property="og:title" content={wpHome.seoTitle} /> */}
+                {/* <meta
                     property="og:description"
                     content={wpHome.seoDescription}
-                />
-                <meta property="og:image" content={wpHome.imgCanonicalUrl} />
+                /> */}
+                {/* <meta property="og:image" content={wpHome.imgCanonicalUrl} />
                 <meta property="og:url" content={wpHome.seoCanonicalUrl} /> */}
                 <meta property="og:type" content="website" />
                 <meta property="og:locale" content="es_ES" />
@@ -40,7 +40,7 @@ export default function Home({ wpServices }) {
             </Head>
             <PublicLayout>
                 <HomeWelcome />
-                <HomeListPosts posts={wpServices} />
+                {/* <HomeListPosts posts={wpServices} /> */}
                 <HomeScrollText />
                 <HomeCtaRx />
                 <HomeServicios />
