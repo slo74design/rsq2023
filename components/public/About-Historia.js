@@ -29,13 +29,14 @@ export const AboutHistoria = () => {
                         width={180}
                         height={180}
                         alt="Logo de RemoteSquid OU"
+                        priority
                     />
                 </div>
             </div>
             <div className="relative mx-auto mt-6 mb-10 max-w-7xl z-1">
                 {/* RSQ */}
                 <div className="flex flex-col lg:flex-row mb-10 lg:mb-16 max-w-screen lg:max-w-5xl lg:mx-auto px-8 lg:px-0">
-                    <div className="mr-6 lg:flex-shrink-0 lg:h-36 lg:w-36 flex lg:relative items-center justify-center lg:self-center w-full">
+                    <div className="mr-6 lg:flex-shrink-0 lg:h-36 lg:w-36 flex lg:relative items-center justify-center lg:self-center w-full mb-8 lg:mb-0">
                         <CldImage
                             src="https://res.cloudinary.com/dtgka7xno/image/upload/w_1000,ar_1:1,c_fill,g_auto,e_art:hokusai/v1685798936/rsqweb/squid_s9elbo.png"
                             width={120}
