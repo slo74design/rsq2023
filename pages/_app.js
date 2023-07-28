@@ -1,9 +1,21 @@
+import { useRouter } from "next/router";
+import { useEffect } from "react";
 import Script from "next/script";
 import { ApolloProvider } from "@apollo/client";
 import { client } from "../lib/apollo";
 import "@/styles/globals.css";
 
 export default function App({ Component, pageProps }) {
+    const router = useRouter();
+    useEffect(() => {
+        const handleRouteChange = (url) => {
+            gtag.pageview(url);
+        };
+        router.events.on("routeChangeComplete", handleRouteChange);
+        return () => {
+            router.events.off("routeChangeComplete", handleRouteChange);
+        };
+    }, [router.events]);
     return (
         <>
             <Script
