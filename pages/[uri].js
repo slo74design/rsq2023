@@ -32,7 +32,6 @@ function classNames(...classes) {
 }
 
 export default function SlugPage({ post }) {
-    console.log(post);
     const [msgForm, setMsgForm] = useState("");
     const {
         register,
@@ -63,14 +62,15 @@ export default function SlugPage({ post }) {
                 }
             );
             const apiRes = await callApi.json();
-            ga.event({
-                action: "generate_lead",
-                category: "engagement",
-                label: "Send Form to Mailchimp",
-                value: "Free",
-            });
+            console.log(apiRes);
             if (apiRes.sent === "1") {
                 setMsgForm("Mensaje enviado correctamente");
+                ga.event({
+                    action: "generate_lead",
+                    category: "engagement",
+                    label: "Send Form to Mailchimp",
+                    value: "Free",
+                });
             } else {
                 setMsgForm(
                     "No se ha podido enviar tu mensaje. Revisa los datos del formulario."
@@ -78,7 +78,7 @@ export default function SlugPage({ post }) {
             }
             setTimeout(() => {
                 setMsgForm("");
-            }, 2000);
+            }, 3000);
             reset();
         } catch (error) {
             console.log(error);
@@ -131,7 +131,7 @@ export default function SlugPage({ post }) {
                                 __html: post.pContent,
                             }}
                         />
-                        <div className="border border-rsq-800 px-6 mt-10">
+                        <div className="border border-rsq-800 p-6 mt-10">
                             <h3
                                 className={`${outfit.className} text-2xl font-semibold`}
                             >
