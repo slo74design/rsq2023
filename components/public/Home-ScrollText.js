@@ -72,22 +72,22 @@ const HomeScrollText = () => {
                     <span
                         className={`${outfit.className} text-3xl font-extrabold tracking-wide uppercase mx-4 text-rsq-100`}
                     >
-                        Multiidiomas
+                        Traducción de sitios web
                     </span>
                     <span
                         className={`${outfit.className} text-3xl font-extrabold tracking-wide uppercase mx-4 text-rsq-100`}
                     >
-                        100% Google friendly
+                        Estrategia de contenido
                     </span>
                     <span
                         className={`${outfit.className} text-3xl font-extrabold tracking-wide uppercase mx-4 text-rsq-100`}
                     >
-                        Marquee Item 4
+                        Administración de blog y tiendas
                     </span>
                     <span
                         className={`${outfit.className} text-3xl font-extrabold tracking-wide uppercase mx-4 text-rsq-100`}
                     >
-                        Marquee Item 5
+                        Mantenimiento técnico
                     </span>
                 </div>
 
@@ -100,22 +100,22 @@ const HomeScrollText = () => {
                     <span
                         className={`${outfit.className} text-3xl font-extrabold tracking-wide uppercase mx-4 text-rsq-100`}
                     >
-                        Multiidiomas
+                        Traducción de sitios web
                     </span>
                     <span
                         className={`${outfit.className} text-3xl font-extrabold tracking-wide uppercase mx-4 text-rsq-100`}
                     >
-                        100% Google friendly
+                        Estrategia de contenido
                     </span>
                     <span
                         className={`${outfit.className} text-3xl font-extrabold tracking-wide uppercase mx-4 text-rsq-100`}
                     >
-                        Marquee Item 4
+                        Administración de blog y tiendas
                     </span>
                     <span
                         className={`${outfit.className} text-3xl font-extrabold tracking-wide uppercase mx-4 text-rsq-100`}
                     >
-                        Marquee Item 5
+                        Mantenimiento técnico
                     </span>
                 </div>
             </div>
