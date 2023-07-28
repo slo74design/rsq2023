@@ -1,5 +1,4 @@
 import Head from "next/head";
-import { NextSeo } from "next-seo";
 
 import { client } from "../lib/apollo";
 import { gql } from "@apollo/client";
