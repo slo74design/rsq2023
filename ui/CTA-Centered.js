@@ -12,16 +12,6 @@ export const CTACentered = ({
         <div className="bg-white">
             <div className="mx-auto max-w-7xl py-0 sm:py-4 sm:px-6 lg:px-8">
                 <div className="relative isolate overflow-hidden px-6 py-10 sm:text-center shadow-2xl sm:rounded-3xl sm:px-16">
-                    <div className="absolute inset-0">
-                        <Image
-                            className="h-full w-full object-cover position-top50"
-                            src="/images/calculatorBack.jpg"
-                            alt="People working on laptops"
-                            width={2000}
-                            height={1227}
-                        />
-                        <div className="absolute inset-0 mix-blend-multiply bg-gradient-to-l from-rsq-400 to-rsq-600" />
-                    </div>
                     <h1 className="relative mx-auto max-w-5xl text-3xl font-bold tracking-normal text-rsq-100">
                         {title}
                     </h1>
