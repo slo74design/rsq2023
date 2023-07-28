@@ -39,7 +39,7 @@ export default function Cookies() {
                 />
                 <meta
                     property="og:url"
-                    content="https://res.cloudinary.com/dtgka7xno/image/upload/v1690485570/logo.png"
+                    content="https://remotesquid.com/cookies"
                 />
                 <meta property="og:type" content="website" />
                 <meta property="og:locale" content="es_ES" />

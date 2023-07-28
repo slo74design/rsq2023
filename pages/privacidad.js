@@ -42,7 +42,7 @@ export default function Privacidad() {
                 />
                 <meta
                     property="og:url"
-                    content="https://res.cloudinary.com/dtgka7xno/image/upload/v1690485570/logo.png"
+                    content="https://remotesquid.com/privacidad"
                 />
                 <meta property="og:type" content="website" />
                 <meta property="og:locale" content="es_ES" />

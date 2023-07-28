@@ -17,8 +17,14 @@ export default function Home({ wpServices }) {
     return (
         <div>
             <Head>
-                {/* <title>{wpHome.seoTitle}</title> */}
-                {/* <meta name="description" content={wpHome.seoDescription} /> */}
+                <title>
+                    #rsqweb, agencia leader en diseños web superrápidos para
+                    Wordpress y Shopify lovers
+                </title>
+                <meta
+                    name="description"
+                    content="Crea tu sitio web con los diseños #rsqweb desarrollados a medida, superrápidos, seo amigables para Wordpress y Shopify lovers"
+                />
                 <meta name="google" content="nositelinkssearchbox" />
                 <meta name="google" content="nopagereadaloud" />
                 <meta name="robots" content="index, follow" />
@@ -27,13 +33,20 @@ export default function Home({ wpServices }) {
                     content="width=device-width, initial-scale=1.0"
                 />
                 <meta charSet="utf-8" />
-                {/* <meta property="og:title" content={wpHome.seoTitle} /> */}
-                {/* <meta
+                <meta
+                    property="og:title"
+                    content="#rsqweb, agencia leader en diseños web superrápidos para
+                    Wordpress y Shopify lovers"
+                />
+                <meta
                     property="og:description"
-                    content={wpHome.seoDescription}
-                /> */}
-                {/* <meta property="og:image" content={wpHome.imgCanonicalUrl} />
-                <meta property="og:url" content={wpHome.seoCanonicalUrl} /> */}
+                    content="Crea tu sitio web con los diseños #rsqweb desarrollados a medida, superrápidos, seo amigables para Wordpress y Shopify lovers"
+                />
+                <meta
+                    property="og:image"
+                    content="https://res.cloudinary.com/dtgka7xno/image/upload/v1690485570/logo.png"
+                />
+                <meta property="og:url" content="https://remotesquid.com" />
                 <meta property="og:type" content="website" />
                 <meta property="og:locale" content="es_ES" />
                 <link rel="icon" href="/favicon.ico" />
