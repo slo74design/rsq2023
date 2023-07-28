@@ -24,6 +24,9 @@ const inter = Inter({
     subsets: ["latin"],
 });
 
+// Integration con GA4
+import * as ga from "../lib/ga";
+
 function classNames(...classes) {
     return classes.filter(Boolean).join(" ");
 }
@@ -59,6 +62,12 @@ export default function SlugPage({ post }) {
                 }
             );
             const apiRes = await callApi.json();
+            ga.event({
+                action: "generate_lead",
+                category: "engagement",
+                label: "Send Form to Mailchimp",
+                value: "Free",
+            });
             if (apiRes.sent === "1") {
                 setMsgForm("Mensaje enviado correctamente");
             } else {
