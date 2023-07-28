@@ -2,8 +2,8 @@ import Head from "next/head";
 
 import { client } from "../lib/apollo";
 import { gql } from "@apollo/client";
-import PublicLayout from "@/layouts/PublicLayout";
 
+import PublicLayout from "@/layouts/PublicLayout";
 import HomeWelcome from "@/components/public/Home-Welcome";
 import HomeScrollText from "@/components/public/Home-ScrollText";
 import HomeCalculadora from "@/components/public/Home-Calculadora";
