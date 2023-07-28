@@ -14,12 +14,12 @@ const menu = [
     {
         id: 2,
         name: "Pólitica de privacidad",
-        url: "/",
+        url: "/privacidad",
     },
     {
         id: 3,
         name: "Cookies",
-        url: "/calcweb",
+        url: "/cookies",
     },
 ];
 

@@ -47,13 +47,13 @@ const AboutHistoria = () => {
                     </div>
                     <div className="w-full">
                         <h3
-                            class={`${outfit.className} text-xl lg:text-3xl leading-6 font-extrabold text-rsq-100`}
+                            className={`${outfit.className} text-xl lg:text-3xl leading-6 font-extrabold text-rsq-100`}
                         >
                             RemoteSquid, la digital estona con mentalidad
                             española
                         </h3>
                         <p
-                            class={`${inter.className} mt-1 text-sm lg:text-lg font-light text-rsq-900`}
+                            className={`${inter.className} mt-1 text-sm lg:text-lg font-light text-rsq-900`}
                         >
                             Repudiandae sint consequuntur vel. Amet ut nobis
                             explicabo numquam expedita quia omnis voluptatem.
@@ -91,12 +91,12 @@ const AboutHistoria = () => {
                 <div className="flex flex-col lg:flex-row mb-10 lg:mb-16 max-w-screen lg:max-w-4xl mx-6 lg:ml-16 lg:mr-auto text-right">
                     <div>
                         <h3
-                            class={`${outfit.className} text-xl lg:text-3xl leading-6 font-extrabold text-rsq-100`}
+                            className={`${outfit.className} text-xl lg:text-3xl leading-6 font-extrabold text-rsq-100`}
                         >
                             Slo74design, innovaciones digitales
                         </h3>
                         <p
-                            class={`${inter.className} mt-1 text-sm lg:text-lg font-light text-rsq-900`}
+                            className={`${inter.className} mt-1 text-sm lg:text-lg font-light text-rsq-900`}
                         >
                             Repudiandae sint consequuntur vel. Amet ut nobis
                             explicabo numquam expedita quia omnis voluptatem.
@@ -150,12 +150,12 @@ const AboutHistoria = () => {
                     </div>
                     <div>
                         <h3
-                            class={`${outfit.className} text-xl lg:text-3xl leading-6 font-extrabold text-rsq-100`}
+                            className={`${outfit.className} text-xl lg:text-3xl leading-6 font-extrabold text-rsq-100`}
                         >
                             Lunarota
                         </h3>
                         <p
-                            class={`${inter.className} mt-1 text-sm lg:text-lg font-light text-rsq-900`}
+                            className={`${inter.className} mt-1 text-sm lg:text-lg font-light text-rsq-900`}
                         >
                             Repudiandae sint consequuntur vel. Amet ut nobis
                             explicabo numquam expedita quia omnis voluptatem.
