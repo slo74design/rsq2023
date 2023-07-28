@@ -5,11 +5,14 @@ import { ApolloProvider } from "@apollo/client";
 import { client } from "../lib/apollo";
 import "@/styles/globals.css";
 
+// Integration con GA4
+import * as ga from "../lib/ga";
+
 export default function App({ Component, pageProps }) {
     const router = useRouter();
     useEffect(() => {
         const handleRouteChange = (url) => {
-            gtag.pageview(url);
+            ga.pageview(url);
         };
         router.events.on("routeChangeComplete", handleRouteChange);
         return () => {

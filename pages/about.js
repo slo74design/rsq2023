@@ -4,30 +4,32 @@ import AboutHistoria from "@/components/public/About-Historia";
 import HomeCalculadora from "@/components/public/Home-Calculadora";
 import HomeServicios from "@/components/public/Home-Servicios";
 
+export const metadata = {
+    title: "RemoteSquid OÜ, la agencia estona de Marketing digital y Web en España",
+    description:
+        "Desarrollo de sitios web, tienda ecommerce y servicios de posicionamiento organico en Google para empezar a vender productos y servicios cumpliendo todos los requerimientos de Google.",
+    ogtitle:
+        "RemoteSquid OÜ, la agencia estona de Marketing digital y Web en España",
+    ogdescription:
+        "Desarrollo de sitios web, tienda ecommerce y servicios de posicionamiento organico en Google para empezar a vender productos y servicios cumpliendo todos los requerimientos de Google.",
+    ogimage:
+        "https://res.cloudinary.com/dtgka7xno/image/upload/v1690485570/logo.png",
+    ogurl: "https://remotesquid.com/about",
+};
+
 export default function About() {
     return (
         <div>
             <Head>
-                {/* <title>{wpHome.seoTitle}</title>
-                <meta name="description" content={wpHome.seoDescription} />
-                <meta name="google" content="nositelinkssearchbox" />
-                <meta name="google" content="nopagereadaloud" />
-                <meta name="robots" content="index, follow" />
-                <meta
-                    name="viewport"
-                    content="width=device-width, initial-scale=1.0"
-                />
-                <meta charSet="utf-8" />
-                <meta property="og:title" content={wpHome.seoTitle} />
+                <title>{metadata.title}</title>
+                <meta name="description" content={metadata.description} />
+                <meta property="og:title" content={metadata.ogtitle} />
                 <meta
                     property="og:description"
-                    content={wpHome.seoDescription}
+                    content={metadata.ogdescription}
                 />
-                <meta property="og:image" content={wpHome.imgCanonicalUrl} />
-                <meta property="og:url" content={wpHome.seoCanonicalUrl} />
-                <meta property="og:type" content="website" />
-                <meta property="og:locale" content="es_ES" />
-                <link rel="icon" href="/favicon.ico" /> */}
+                <meta property="og:image" content={metadata.ogimage} />
+                <meta property="og:url" content={metadata.ogurl} />
             </Head>
             <PublicLayout>
                 <AboutHistoria />

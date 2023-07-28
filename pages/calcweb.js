@@ -29,6 +29,19 @@ import Link from "next/link";
 import { useRouter } from "next/router";
 const fontPersonalizado = Comic_Neue({ weight: "400", subsets: ["latin"] });
 
+export const metadata = {
+    title: "Calcula el presupuesto del diseño web superrápido y Seo friendly de #rsqweb",
+    description:
+        "Descarga el presupuesto y recoje tu descuento para el desarrollo de tu nuevo sitio web o tienda ecommerce con #rsqweb",
+    ogtitle:
+        "Calcula el presupuesto del diseño web superrápido y Seo friendly de #rsqweb",
+    ogdescription:
+        "Descarga el presupuesto y recoje tu descuento para el desarrollo de tu nuevo sitio web o tienda ecommerce con #rsqweb",
+    ogimage:
+        "https://res.cloudinary.com/dtgka7xno/image/upload/v1690485570/logo.png",
+    ogurl: "https://remotesquid.com/calcweb",
+};
+
 export default function Calcweb() {
     const router = useRouter();
     const _lookupCms = lookupCms;
@@ -145,26 +158,15 @@ export default function Calcweb() {
     return (
         <div>
             <Head>
-                {/* <title>{wpHome.seoTitle}</title>
-                <meta name="description" content={wpHome.seoDescription} />
-                <meta name="google" content="nositelinkssearchbox" />
-                <meta name="google" content="nopagereadaloud" />
-                <meta name="robots" content="index, follow" />
-                <meta
-                    name="viewport"
-                    content="width=device-width, initial-scale=1.0"
-                />
-                <meta charSet="utf-8" />
-                <meta property="og:title" content={wpHome.seoTitle} />
+                <title>{metadata.title}</title>
+                <meta name="description" content={metadata.description} />
+                <meta property="og:title" content={metadata.ogtitle} />
                 <meta
                     property="og:description"
-                    content={wpHome.seoDescription}
+                    content={metadata.ogdescription}
                 />
-                <meta property="og:image" content={wpHome.imgCanonicalUrl} />
-                <meta property="og:url" content={wpHome.seoCanonicalUrl} />
-                <meta property="og:type" content="website" /> */}
-                <meta property="og:locale" content="es_ES" />
-                <link rel="icon" href="/favicon.ico" />
+                <meta property="og:image" content={metadata.ogimage} />
+                <meta property="og:url" content={metadata.ogurl} />
             </Head>
             <PublicLayout>
                 <div className="mix-blend-multiply bg-gradient-to-b from-white to-slate-100 py-24">

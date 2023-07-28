@@ -13,43 +13,31 @@ import HomeServicios from "@/components/public/Home-Servicios";
 import HomeStats from "@/components/public/Home-Stats";
 import HomeLogos from "@/components/public/Home-Logos";
 
+export const metadata = {
+    title: "#rsqweb, agencia leader en diseños web superrápidos para Wordpress y Shopify lovers",
+    description:
+        "Crea tu sitio web con los diseños #rsqweb desarrollados a medida, superrápidos, seo amigables para Wordpress y Shopify lovers",
+    ogtitle:
+        "#rsqweb, agencia leader en diseños web superrápidos para Wordpress y Shopify lovers",
+    ogdescription:
+        "Crea tu sitio web con los diseños #rsqweb desarrollados a medida, superrápidos, seo amigables para Wordpress y Shopify lovers",
+    ogimage:
+        "https://res.cloudinary.com/dtgka7xno/image/upload/v1690485570/logo.png",
+    ogurl: "https://remotesquid.com",
+};
 export default function Home({ wpServices }) {
     return (
         <div>
             <Head>
-                <title>
-                    #rsqweb, agencia leader en diseños web superrápidos para
-                    Wordpress y Shopify lovers
-                </title>
-                <meta
-                    name="description"
-                    content="Crea tu sitio web con los diseños #rsqweb desarrollados a medida, superrápidos, seo amigables para Wordpress y Shopify lovers"
-                />
-                <meta name="google" content="nositelinkssearchbox" />
-                <meta name="google" content="nopagereadaloud" />
-                <meta name="robots" content="index, follow" />
-                <meta
-                    name="viewport"
-                    content="width=device-width, initial-scale=1.0"
-                />
-                <meta charSet="utf-8" />
-                <meta
-                    property="og:title"
-                    content="#rsqweb, agencia leader en diseños web superrápidos para
-                    Wordpress y Shopify lovers"
-                />
+                <title>{metadata.title}</title>
+                <meta name="description" content={metadata.description} />
+                <meta property="og:title" content={metadata.ogtitle} />
                 <meta
                     property="og:description"
-                    content="Crea tu sitio web con los diseños #rsqweb desarrollados a medida, superrápidos, seo amigables para Wordpress y Shopify lovers"
+                    content={metadata.ogdescription}
                 />
-                <meta
-                    property="og:image"
-                    content="https://res.cloudinary.com/dtgka7xno/image/upload/v1690485570/logo.png"
-                />
-                <meta property="og:url" content="https://remotesquid.com" />
-                <meta property="og:type" content="website" />
-                <meta property="og:locale" content="es_ES" />
-                <link rel="icon" href="/favicon.ico" />
+                <meta property="og:image" content={metadata.ogimage} />
+                <meta property="og:url" content={metadata.ogurl} />
             </Head>
             <PublicLayout>
                 <HomeWelcome />

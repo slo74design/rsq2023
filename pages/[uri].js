@@ -32,6 +32,7 @@ function classNames(...classes) {
 }
 
 export default function SlugPage({ post }) {
+    console.log(post);
     const [msgForm, setMsgForm] = useState("");
     const {
         register,
@@ -87,8 +88,29 @@ export default function SlugPage({ post }) {
     return (
         <div>
             <Head>
-                <title>Headless WP Next Starter</title>
-                <link rel="icon" href="favicon.ico"></link>
+                <title>{post.pSeoTitle}</title>
+                <meta name="description" content={post.pSeoDescription} />
+                <meta property="og:title" content={post.pSeoTitle} />
+                <meta
+                    property="og:description"
+                    content={post.pSeoDescription}
+                />
+                <meta
+                    property="og:image"
+                    content="https://res.cloudinary.com/dtgka7xno/image/upload/v1690485570/logo.png"
+                />
+                <meta property="og:url" content={post.pSeoCanonicalUrl} />
+                <meta name="google" content="nositelinkssearchbox" />
+                <meta name="google" content="nopagereadaloud" />
+                <meta name="robots" content="index, follow" />
+                <meta
+                    name="viewport"
+                    content="width=device-width, initial-scale=1.0"
+                />
+                <meta charSet="utf-8" />
+                <meta property="og:type" content="website" />
+                <meta property="og:locale" content="es_ES" />
+                <link rel="icon" href="/favicon.ico" />
             </Head>
             <PublicLayout>
                 <div className="bg-white px-6 py-10 lg:py-24 lg:px-8 postTemplate">
