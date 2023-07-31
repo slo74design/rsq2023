@@ -62,7 +62,6 @@ export default function SlugPage({ post }) {
                 }
             );
             const apiRes = await callApi.json();
-            console.log(apiRes);
             if (apiRes.sent === "1") {
                 setMsgForm("Mensaje enviado correctamente");
                 ga.event({
