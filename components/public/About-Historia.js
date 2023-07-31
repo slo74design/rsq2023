@@ -49,7 +49,7 @@ const AboutHistoria = () => {
                         <h3
                             className={`${outfit.className} text-xl lg:text-3xl leading-6 font-extrabold text-rsq-100`}
                         >
-                            RemoteSquid, la agencia web estona con mentalidad
+                            RemoteSquid, la agencia web OÜ con mentalidad
                             española
                         </h3>
                         <p
