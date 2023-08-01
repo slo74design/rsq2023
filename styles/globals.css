@@ -28,11 +28,14 @@ h6 {
 }
 
 .postTemplate p strong {
-  color: brown;
+  color: "#1C3144";
 }
 
 .postTemplate a {
-  color: royalblue;
+  color: "#FC4850";
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  font-weight: 600;
 }
 
 .postTemplate ul li {
@@ -48,8 +51,8 @@ h6 {
 .postTemplate .wp-block-pullquote {
   margin: 20px 0;
   padding: 3% 4%;
-  border-top: 1px solid red;
-  border-bottom: 1px solid red;
+  border-top: 1px solid #FC4850;
+  border-bottom: 1px solid #FC4850;
 }
 
 .postTemplate .wp-block-gallery {

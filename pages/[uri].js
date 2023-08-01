@@ -125,7 +125,7 @@ export default function SlugPage({ post }) {
                             {post.pTitle}
                         </h1>
                         <div
-                            className={`${inter.className} mt-6 text-base lg:text-lg text-rsq-900 leading-7`}
+                            className={`${inter.className} mt-6 text-base font-light lg:text-lg text-rsq-900 leading-7`}
                             dangerouslySetInnerHTML={{
                                 __html: post.pContent,
                             }}
