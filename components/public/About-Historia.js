@@ -49,15 +49,13 @@ const AboutHistoria = () => {
                         <h3
                             className={`${outfit.className} text-xl lg:text-3xl leading-6 font-extrabold text-rsq-100`}
                         >
-                            RemoteSquid, la agencia web OU con mentalidad
+                            RemoteSquid, la agencia web estona con mentalidad
                             española
                         </h3>
                         <p
                             className={`${inter.className} mt-1 text-sm lg:text-lg font-light text-rsq-900`}
                         >
-                            Repudiandae sint consequuntur vel. Amet ut nobis
-                            explicabo numquam expedita quia omnis voluptatem.
-                            Minus quidem ipsam quia iusto.
+                            Nuestra agencia web ha sido fundada en el 2020.
                         </p>
                         <div className="relative flex flex-col lg:flex-row justify-start items-start lg:items-center gap-y-1 lg:gap-x-8 mt-2">
                             <div className="flex flex-row justify-center items-start">
