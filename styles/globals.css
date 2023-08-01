@@ -35,6 +35,16 @@ h6 {
   color: royalblue;
 }
 
+.postTemplate ul li {
+  list-style-type: circle;
+  margin-left: 15px;
+  margin-bottom: 5px;
+}
+
+.postTemplate ul li strong {
+  font-family: system-ui;
+}
+
 .postTemplate .wp-block-pullquote {
   margin: 20px 0;
   padding: 3% 4%;

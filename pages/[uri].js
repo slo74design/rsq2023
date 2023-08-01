@@ -20,7 +20,7 @@ const outfit = Outfit({
     subsets: ["latin"],
 });
 const inter = Inter({
-    weight: ["100", "200", "300"],
+    weight: ["100", "200", "300", "600", "700", "400"],
     subsets: ["latin"],
 });
 
@@ -125,7 +125,7 @@ export default function SlugPage({ post }) {
                             {post.pTitle}
                         </h1>
                         <div
-                            className={`${inter.className} mt-6 text-base lg:text-xl text-rsq-900 leading-7 lg:leading-8`}
+                            className={`${inter.className} mt-6 text-base lg:text-lg text-rsq-900 leading-7`}
                             dangerouslySetInnerHTML={{
                                 __html: post.pContent,
                             }}
