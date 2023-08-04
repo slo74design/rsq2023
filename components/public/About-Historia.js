@@ -53,13 +53,13 @@ const AboutHistoria = () => {
                     </div>
                     <div className="w-full">
                         <h3
-                            className={`${outfit.className} text-xl lg:text-3xl leading-6 font-extrabold text-rsq-100`}
+                            className={`${outfit.className} text-2xl lg:text-3xl leading-6 font-extrabold text-rsq-100`}
                         >
                             RemoteSquid, la agencia web estona con mentalidad
                             española
                         </h3>
                         <p
-                            className={`${inter.className} mt-1 text-sm lg:text-lg font-light text-rsq-900`}
+                            className={`${inter.className} mt-1 text-base lg:text-lg font-light text-rsq-900`}
                         >
                             Somos una agencia web, fundada en el 2020, por dos
                             freelancers de la generación X con un buen
@@ -101,12 +101,12 @@ const AboutHistoria = () => {
                 <div className="flex flex-col lg:flex-row mb-10 lg:mb-16 max-w-screen lg:max-w-4xl mx-6 lg:ml-16 lg:mr-auto text-right">
                     <div>
                         <h3
-                            className={`${outfit.className} text-xl lg:text-3xl leading-6 font-extrabold text-rsq-100`}
+                            className={`${outfit.className} text-2xl lg:text-3xl leading-6 font-extrabold text-rsq-100`}
                         >
                             Slo74design, el growth Hacker del codigo
                         </h3>
                         <p
-                            className={`${inter.className} mt-1 text-sm lg:text-lg font-light text-rsq-900`}
+                            className={`${inter.className} mt-1 text-base lg:text-lg font-light text-rsq-900`}
                         >
                             Codigo, nuevas tecnologias y estrategia digital
                             están en su ADN. Perfecto aliado digital y
@@ -161,12 +161,12 @@ const AboutHistoria = () => {
                     </div>
                     <div>
                         <h3
-                            className={`${outfit.className} text-xl lg:text-3xl leading-6 font-extrabold text-rsq-100`}
+                            className={`${outfit.className} text-2xl lg:text-3xl leading-6 font-extrabold text-rsq-100`}
                         >
                             Luna2rota y sus contenidos sin barreras
                         </h3>
                         <p
-                            className={`${inter.className} mt-1 text-sm lg:text-lg font-light text-rsq-900`}
+                            className={`${inter.className} mt-1 text-base lg:text-lg font-light text-rsq-900`}
                         >
                             Meticulosa, profesional y directa al grano. Es una
                             referente para los clientes de la agencia. Con su
