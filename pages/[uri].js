@@ -130,7 +130,7 @@ export default function SlugPage({ post }) {
                                 __html: post.pContent,
                             }}
                         />
-                        <div className="border border-rsq-800 p-6 mt-10">
+                        <div className="border border-rsq-800 rounded-xl p-6 mt-10 formTemplate">
                             <h3
                                 className={`${outfit.className} text-2xl font-semibold`}
                             >

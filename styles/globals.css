@@ -36,11 +36,12 @@ h6 {
 }
 
 .postTemplate p strong {
-  color: "#1C3144";
+  color: #1C3144;
+  font-weight: 600;
 }
 
 .postTemplate a, .postTemplate strong a {
-  color: "#FC4850";
+  color: #FC4850;
   font-size: 1.125rem;
   line-height: 1.75rem;
   font-weight: 600;
@@ -87,4 +88,16 @@ h6 {
 
 .postTemplate .wp-block-image.size-full img {
   margin: 30px 0;
+}
+
+.formTemplate {
+  background-color: #fafafa;
+}
+
+.formTemplate h3 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  line-height: 1.3;
+  color: #1C3144;
+  text-transform: uppercase;
 }
