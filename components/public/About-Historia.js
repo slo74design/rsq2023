@@ -83,7 +83,7 @@ const AboutHistoria = () => {
                                 <p
                                     className={`${outfit.className} font-extralight text-sm uppercase text-rsq-100`}
                                 >
-                                    3 tiendas + 2 sitios corporativos en el 2023
+                                    3 tiendas en el 2023
                                 </p>
                             </div>
                             <div className="flex flex-row justify-center items-start">
@@ -91,7 +91,7 @@ const AboutHistoria = () => {
                                 <p
                                     className={`${outfit.className} font-extralight text-sm uppercase text-rsq-100`}
                                 >
-                                    2 proyectos web superrápidos en el 2023
+                                    2 webs superrápidas en el 2023
                                 </p>
                             </div>
                         </div>
@@ -117,28 +117,26 @@ const AboutHistoria = () => {
                         </p>
                         <div className="relative flex flex-col lg:flex-row justify-start items-end lg:justify-end lg:items-center gap-y-1 lg:gap-x-8 mt-2">
                             <div className="flex flex-row justify-center items-start">
-                                <BiMapPin className="h-5 w-5 text-rsq-800 ml-2 lg:mr-1 order-last lg:order-first" />
-                                <p
-                                    className={`${outfit.className} font-extralight text-sm uppercase text-rsq-100`}
-                                >
-                                    Freelancer por el mundo
-                                </p>
-                            </div>
-                            <div className="flex flex-row justify-center items-start">
                                 <BiLogoLinkedin className="h-5 w-5 text-rsq-800 ml-2 lg:mr-1 order-last lg:order-first" />
-                                <p
+                                <a
                                     className={`${outfit.className} font-extralight text-sm uppercase text-rsq-100`}
+                                    href="https://www.linkedin.com/in/slo74/"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
                                 >
-                                    /slo74
-                                </p>
+                                    /in/slo74/
+                                </a>
                             </div>
                             <div className="flex flex-row justify-center items-start">
                                 <BiLogoInstagram className="h-5 w-5 text-rsq-800 ml-2 lg:mr-1 order-last lg:order-first" />
-                                <p
+                                <a
                                     className={`${outfit.className} font-extralight text-sm uppercase text-rsq-100`}
+                                    href="https://www.instagram.com/slo74design/"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
                                 >
-                                    5 fast websites in 2023
-                                </p>
+                                    @slo74design/
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -147,7 +145,7 @@ const AboutHistoria = () => {
                             src="https://res.cloudinary.com/dtgka7xno/image/upload/v1689500071/rsqweb/slo74_2x_dxtsyl.svg"
                             width={120}
                             height={120}
-                            alt="Logo de RemoteSquid OU"
+                            alt="Slo74design en RemoteSquid OU"
                         />
                     </div>
                 </div>
@@ -158,46 +156,47 @@ const AboutHistoria = () => {
                             src="https://res.cloudinary.com/dtgka7xno/image/upload/v1689500053/rsqweb/lunarota_2x_hqwwlt.svg"
                             width={120}
                             height={120}
-                            alt="Logo de RemoteSquid OU"
+                            alt="Luna2rota en RemoteSquid OU"
                         />
                     </div>
                     <div>
                         <h3
                             className={`${outfit.className} text-xl lg:text-3xl leading-6 font-extrabold text-rsq-100`}
                         >
-                            Lunarota
+                            Luna2rota y sus contenidos sin barreras
                         </h3>
                         <p
                             className={`${inter.className} mt-1 text-sm lg:text-lg font-light text-rsq-900`}
                         >
-                            Repudiandae sint consequuntur vel. Amet ut nobis
-                            explicabo numquam expedita quia omnis voluptatem.
-                            Minus quidem ipsam quia iusto.
+                            Meticulosa, profesional y directa al grano. Es una
+                            referente para los clientes de la agencia. Con su
+                            background en Turismo, todos sus contenidos hablan
+                            un idioma perfecto, sin fallos y sobretodo sin GPT.
+                            Es una lover de los colores, del progreso y del
+                            medio-ambiente.
                         </p>
                         <div className="relative flex flex-col lg:flex-row justify-start items-start lg:items-center gap-y-1 lg:gap-x-8 mt-2">
                             <div className="flex flex-row justify-center items-start">
-                                <BiMapPin className="h-5 w-5 text-rsq-800 mr-1" />
-                                <p
+                                <BiLogoLinkedin className="h-5 w-5 text-rsq-800 ml-2 lg:mr-1 order-last lg:order-first" />
+                                <a
                                     className={`${outfit.className} font-extralight text-sm uppercase text-rsq-100`}
+                                    href="https://www.linkedin.com/in/cinziasanfilippo/"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
                                 >
-                                    Tallinn, Estonia
-                                </p>
+                                    /in/cinziasanfilippo/
+                                </a>
                             </div>
                             <div className="flex flex-row justify-center items-start">
-                                <BiStore className="h-5 w-5 text-rsq-800 mr-1" />
-                                <p
+                                <BiLogoInstagram className="h-5 w-5 text-rsq-800 ml-2 lg:mr-1 order-last lg:order-first" />
+                                <a
                                     className={`${outfit.className} font-extralight text-sm uppercase text-rsq-100`}
+                                    href="https://www.instagram.com/luna2rota/"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
                                 >
-                                    3 tiendas in 2023
-                                </p>
-                            </div>
-                            <div className="flex flex-row justify-center items-start">
-                                <BiGlobe className="h-5 w-5 text-rsq-800 mr-1" />
-                                <p
-                                    className={`${outfit.className} font-extralight text-sm uppercase text-rsq-100`}
-                                >
-                                    5 fast websites in 2023
-                                </p>
+                                    @luna2rota/
+                                </a>
                             </div>
                         </div>
                     </div>
