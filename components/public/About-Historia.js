@@ -64,9 +64,9 @@ const AboutHistoria = () => {
                             Somos una agencia web, fundada en el 2020, por dos
                             freelancers de la generación X con un buen
                             background y experiencia decenal en programación y
-                            Marketing Digital. Somos motivados, felices de
-                            aprender cada día, abiertos a nuevos retos y
-                            dispuestos a luchar para quedarnos vivos en este mar
+                            Marketing Digital. Somos motivad@s, felices de
+                            aprender cada día, abiert@s a nuevos retos y
+                            dispuest@s a luchar para quedarnos vivos en este mar
                             digital. Palabra de 🦑.
                         </p>
                         <div className="relative flex flex-col lg:flex-row justify-start items-start lg:items-center gap-y-1 lg:gap-x-8 mt-2">
@@ -112,7 +112,7 @@ const AboutHistoria = () => {
                             están en su ADN. Perfecto aliado digital y
                             disponible 24h por sus clientes. Creativo, rompedor
                             y siempre atento a los nuevos trends del mercado
-                            digital. Soy Salva, ¿como puedo facilitar tu vida
+                            digital. Soy Salva, ¿como puedo agilizar tu vida
                             digital?
                         </p>
                         <div className="relative flex flex-col lg:flex-row justify-start items-end lg:justify-end lg:items-center gap-y-1 lg:gap-x-8 mt-2">

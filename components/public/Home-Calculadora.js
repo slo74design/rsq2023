@@ -38,7 +38,7 @@ const calcserv = [
     },
 ];
 
-const HomeCalculadora = ({ title = "Calcula tu presupuesto web" }) => {
+const HomeCalculadora = ({ title = "Calcúla tu presupuesto web" }) => {
     return (
         <div className="my-10 lg:my-20">
             <div className="relative flex items-center justify-center z-1 h-48 lg:h-60 overflow-hidden">
@@ -58,9 +58,9 @@ const HomeCalculadora = ({ title = "Calcula tu presupuesto web" }) => {
                     <p
                         className={`${outfit.className} mt-2 px-6 lg:px-0 text-lg sm:text-xl leading-6 sm:leading-7 text-slate-700 font-extralight max-w-full sm:max-w-3xl mx-auto`}
                     >
-                        Diseños y aplicaciones web, a medida, para cualquier
-                        actividad en linea. Nuestras creaciones son compatibles
-                        con Wordpress, Shopify y ... Google.
+                        Diseños y aplicaciones web a medida para cualquier
+                        actividad en linea. 100% compatibles con Wordpress,
+                        Shopify y ... Google.
                     </p>
                 </div>
             </div>
