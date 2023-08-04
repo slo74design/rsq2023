@@ -9,7 +9,13 @@ const inter = Inter({
     weight: ["100", "200"],
     subsets: ["latin"],
 });
-import { BiMapPin, BiStore, BiGlobe } from "react-icons/bi";
+import {
+    BiMapPin,
+    BiStore,
+    BiGlobe,
+    BiLogoLinkedin,
+    BiLogoInstagram,
+} from "react-icons/bi";
 
 const AboutHistoria = () => {
     return (
@@ -55,7 +61,13 @@ const AboutHistoria = () => {
                         <p
                             className={`${inter.className} mt-1 text-sm lg:text-lg font-light text-rsq-900`}
                         >
-                            Nuestra agencia web ha sido fundada en el 2020.
+                            Somos una agencia web, fundada en el 2020, por dos
+                            freelancers de la generación X con un buen
+                            background y experiencia decenal en programación y
+                            Marketing Digital. Somos motivados, felices de
+                            aprender cada día, abiertos a nuevos retos y
+                            dispuestos a luchar para quedarnos vivos en este mar
+                            digital. Palabra de 🦑.
                         </p>
                         <div className="relative flex flex-col lg:flex-row justify-start items-start lg:items-center gap-y-1 lg:gap-x-8 mt-2">
                             <div className="flex flex-row justify-center items-start">
@@ -71,7 +83,7 @@ const AboutHistoria = () => {
                                 <p
                                     className={`${outfit.className} font-extralight text-sm uppercase text-rsq-100`}
                                 >
-                                    3 tiendas in 2023
+                                    3 tiendas + 2 sitios corporativos en el 2023
                                 </p>
                             </div>
                             <div className="flex flex-row justify-center items-start">
@@ -79,7 +91,7 @@ const AboutHistoria = () => {
                                 <p
                                     className={`${outfit.className} font-extralight text-sm uppercase text-rsq-100`}
                                 >
-                                    5 fast websites in 2023
+                                    2 proyectos web superrápidos en el 2023
                                 </p>
                             </div>
                         </div>
@@ -91,14 +103,17 @@ const AboutHistoria = () => {
                         <h3
                             className={`${outfit.className} text-xl lg:text-3xl leading-6 font-extrabold text-rsq-100`}
                         >
-                            Slo74design, innovaciones digitales
+                            Slo74design, el growth Hacker del codigo
                         </h3>
                         <p
                             className={`${inter.className} mt-1 text-sm lg:text-lg font-light text-rsq-900`}
                         >
-                            Repudiandae sint consequuntur vel. Amet ut nobis
-                            explicabo numquam expedita quia omnis voluptatem.
-                            Minus quidem ipsam quia iusto.
+                            Codigo, nuevas tecnologias y estrategia digital
+                            están en su ADN. Perfecto aliado digital y
+                            disponible 24h por sus clientes. Creativo, rompedor
+                            y siempre atento a los nuevos trends del mercado
+                            digital. Soy Salva, ¿como puedo facilitar tu vida
+                            digital?
                         </p>
                         <div className="relative flex flex-col lg:flex-row justify-start items-end lg:justify-end lg:items-center gap-y-1 lg:gap-x-8 mt-2">
                             <div className="flex flex-row justify-center items-start">
@@ -106,19 +121,19 @@ const AboutHistoria = () => {
                                 <p
                                     className={`${outfit.className} font-extralight text-sm uppercase text-rsq-100`}
                                 >
-                                    Tallinn, Estonia
+                                    Freelancer por el mundo
                                 </p>
                             </div>
                             <div className="flex flex-row justify-center items-start">
-                                <BiStore className="h-5 w-5 text-rsq-800 ml-2 lg:mr-1 order-last lg:order-first" />
+                                <BiLogoLinkedin className="h-5 w-5 text-rsq-800 ml-2 lg:mr-1 order-last lg:order-first" />
                                 <p
                                     className={`${outfit.className} font-extralight text-sm uppercase text-rsq-100`}
                                 >
-                                    3 tiendas in 2023
+                                    /slo74
                                 </p>
                             </div>
                             <div className="flex flex-row justify-center items-start">
-                                <BiGlobe className="h-5 w-5 text-rsq-800 ml-2 lg:mr-1 order-last lg:order-first" />
+                                <BiLogoInstagram className="h-5 w-5 text-rsq-800 ml-2 lg:mr-1 order-last lg:order-first" />
                                 <p
                                     className={`${outfit.className} font-extralight text-sm uppercase text-rsq-100`}
                                 >
