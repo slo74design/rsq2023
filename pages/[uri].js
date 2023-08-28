@@ -14,18 +14,15 @@ import { SingleFaqs } from "@/components/public/Single-Faqs";
 import { getAllPosts } from "@/lib/getAllPosts";
 import { getPostByUri } from "@/lib/getPostByUri";
 
-import { Inter, Outfit } from "next/font/google";
+import { Outfit } from "next/font/google";
 const outfit = Outfit({
     weight: ["100", "300", "600", "700", "800"],
-    subsets: ["latin"],
-});
-const inter = Inter({
-    weight: ["100", "200", "300", "600", "700", "400"],
     subsets: ["latin"],
 });
 
 // Integration con GA4
 import * as ga from "../lib/ga";
+import SocialShareIcons from "@/ui/SocialShareIcons";
 
 function classNames(...classes) {
     return classes.filter(Boolean).join(" ");
@@ -112,7 +109,7 @@ export default function SlugPage({ post }) {
                 <link rel="icon" href="/favicon.ico" />
             </Head>
             <PublicLayout>
-                <div className="px-6 py-10 lg:py-24 lg:px-8 postTemplate">
+                <div className="px-6 py-10 lg:py-24 lg:px-8 postTemplate bg-white rounded-t-3xl">
                     <div className="mx-auto max-w-5xl text-base leading-7 text-gray-700">
                         <p
                             className={`${outfit.className} font-extralight text-rsq-800 uppercase text-sm lg:text-base`}
@@ -125,7 +122,24 @@ export default function SlugPage({ post }) {
                             {post.pTitle}
                         </h1>
                         <div
-                            className={`${inter.className} mt-6 text-base xl:text-lg xl:leading-7 font-light text-slate-600 leading-6`}
+                            className="text-base xl:text-lg xl:leading-7 tracking-tight font-light text-slate-400 leading-6 mt-6"
+                            dangerouslySetInnerHTML={{
+                                __html: post.pExcerpt,
+                            }}
+                        />
+                        <div className="flex justify-start items-center mt-4">
+                            <SocialShareIcons detailPost={post} />
+                        </div>
+                        <CldImage
+                            src={post.pFeatImgUri}
+                            width={1440}
+                            height={400}
+                            alt={post.pFeatImgSeoTitle}
+                            priority
+                            className="w-full h-80 object-cover my-8 rounded-lg"
+                        />
+                        <div
+                            className="text-base xl:text-lg xl:leading-relaxed tracking-tight font-light text-slate-700 leading-6"
                             dangerouslySetInnerHTML={{
                                 __html: post.pContent,
                             }}
