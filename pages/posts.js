@@ -12,6 +12,8 @@ import HomeStats from "@/components/public/Home-Stats";
 import HomeLogos from "@/components/public/Home-Logos";
 import Headline from "@/components/public/Headline";
 import HomeRsq from "@/components/public/Home-RSQ";
+import { useEffect, useState } from "react";
+import { MagnifyingGlassIcon } from "@heroicons/react/20/solid";
 
 export const metadata = {
     title: "#rsqweb, agencia leader en diseños web superrápidos para Wordpress y Shopify lovers",
@@ -25,7 +27,25 @@ export const metadata = {
         "https://res.cloudinary.com/dtgka7xno/image/upload/v1690485570/logo.png",
     ogurl: "https://remotesquid.com",
 };
-export default function Home({ wpServices }) {
+export default function Posts({ wpServices }) {
+    const [dataApi, setDataApi] = useState([]);
+    const [valueForm, setValueForm] = useState("");
+    const [isLoading, setIsLoading] = useState(true);
+
+    useEffect(() => {
+        let res;
+        setIsLoading(true);
+        setDataApi(wpServices);
+
+        if (valueForm !== "") {
+            res = wpServices.filter((item) =>
+                item.pTitle.toLowerCase().includes(valueForm.toLowerCase())
+            );
+        }
+        setDataApi(res);
+        setIsLoading(false);
+    }, [wpServices, valueForm]);
+
     return (
         <div>
             <Head>
@@ -40,13 +60,29 @@ export default function Home({ wpServices }) {
                 <meta property="og:url" content={metadata.ogurl} />
             </Head>
             <PublicLayout>
-                <Headline />
-                <HomeListPosts posts={wpServices} />
-                <HomeRsq />
-                {/* <HomeScrollText /> */}
-                <HomeCtaRx />
-                <HomeCalculadora title="El presupuesto para tu próxima web" />
-                {/* <HomeStats /> */}
+                <div className="max-w-5xl mx-auto my-10 px-6 lg:px-8 xl:px-0">
+                    <div className="relative">
+                        <div className="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-3">
+                            <MagnifyingGlassIcon
+                                className="h-5 w-5 text-gray-400"
+                                aria-hidden="true"
+                            />
+                        </div>
+                        <input
+                            type="text"
+                            name="searchTxt"
+                            id="searchTxt"
+                            onChange={(e) => setValueForm(e.target.value)}
+                            className="block w-full rounded-full  border-slate-300 border py-1.5 pl-10 text-rsq-900 placeholder:text-gray-400 sm:text-sm sm:leading-6 outline-0"
+                            placeholder="Busca por solución"
+                        />
+                    </div>
+                </div>
+                {valueForm !== "" && dataApi?.length > 0 ? (
+                    <HomeListPosts posts={dataApi} />
+                ) : (
+                    <HomeListPosts posts={wpServices} />
+                )}
                 <HomeLogos />
             </PublicLayout>
         </div>
@@ -63,7 +99,6 @@ export async function getStaticProps() {
                     status: PUBLISH
                     orderby: { order: DESC, field: DATE }
                 }
-                first: 4
             ) {
                 nodes {
                     status
@@ -82,7 +117,6 @@ export async function getStaticProps() {
                         nodes {
                             name
                             slug
-                            categoryId
                         }
                     }
                 }
@@ -105,7 +139,6 @@ export async function getStaticProps() {
                 pType: item.tipoPost?.clasificacionForm, // postLayout para determinar el formato del post
                 pCta: item.tipoPost?.tituloCta,
                 pCatSlug: item.categories?.nodes[0]?.slug,
-                pCatId: item.categories?.nodes[0]?.categoryId,
             });
         }
     });

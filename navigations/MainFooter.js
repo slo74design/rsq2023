@@ -12,6 +12,11 @@ const menu = [
         url: "/about",
     },
     {
+        id: 1,
+        name: "Contacto",
+        url: "/contact",
+    },
+    {
         id: 2,
         name: "Pólitica de privacidad",
         url: "/privacidad",
@@ -40,24 +45,22 @@ const social = [
 
 const MainFooter = () => {
     return (
-        <footer className="hidden lg:block bg-slate-50">
-            <div className="max-w-screen md:flex md:items-center md:justify-between">
-                <div className="flex justify-center items-center">
+        <footer className="bg-slate-50">
+            <div className="max-w-screen lg:flex lg:items-center lg:justify-between">
+                <div className="flex flex-col md:flex-row justify-center items-center">
                     {menu.map((item) => (
                         <Link
                             key={item.name}
                             href={item.url}
-                            className="p-6 border-r-2 border-r-white"
+                            className="p-3 md:p-5 xl:p-6 border-r-2 border-r-white"
                         >
-                            <p
-                                className={`${outfit.className}text-rsq-100 font-extralight uppercase tracking-wide hover:text-rsq-200`}
-                            >
+                            <p className="text-slate-600 text-sm font-extralight uppercase tracking-wide hover:text-rsq-200">
                                 {item.name}
                             </p>
                         </Link>
                     ))}
                 </div>
-                <div className="flex justify-center items-center">
+                <div className="flex justify-center items-center py-3 xl:py-0">
                     {social.map((item) => (
                         <Link key={item.id} href={item.url} className="px-3">
                             {item.image}

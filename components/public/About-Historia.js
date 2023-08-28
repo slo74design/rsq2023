@@ -19,7 +19,7 @@ import {
 
 const AboutHistoria = () => {
     return (
-        <div className="my-10 lg:my-20 z-1">
+        <div className="my-10 z-1">
             <div className="hidden relative lg:flex items-center justify-center z-1 h-60">
                 <div className="absolute">
                     <h1

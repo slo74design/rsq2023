@@ -33,6 +33,10 @@ module.exports = {
                     100: "#ECECEC", // Linea Separadora
                     200: "#A6A6A6", // Borde Field
                 },
+                bkg: {
+                    100: "#ff000005",
+                    200: "#ff000014",
+                },
             },
             animation: {
                 marquee: "marquee 15s linear infinite",

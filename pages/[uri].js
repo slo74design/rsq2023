@@ -112,12 +112,12 @@ export default function SlugPage({ post }) {
                 <link rel="icon" href="/favicon.ico" />
             </Head>
             <PublicLayout>
-                <div className="bg-white px-6 py-10 lg:py-24 lg:px-8 postTemplate">
+                <div className="px-6 py-10 lg:py-24 lg:px-8 postTemplate">
                     <div className="mx-auto max-w-5xl text-base leading-7 text-gray-700">
                         <p
                             className={`${outfit.className} font-extralight text-rsq-800 uppercase text-sm lg:text-base`}
                         >
-                            {post.pCategoryName} - Pregunta #{post.pId}
+                            {post.pCategoryName} - Solución #{post.pId}
                         </p>
                         <h1
                             className={`${outfit.className} font-extrabold text-rsq-100 text-3xl lg:text-3xl leading-tight my-0`}
@@ -125,7 +125,7 @@ export default function SlugPage({ post }) {
                             {post.pTitle}
                         </h1>
                         <div
-                            className={`${inter.className} mt-6 text-base font-light lg:text-lg text-rsq-900 leading-7`}
+                            className={`${inter.className} mt-6 text-base xl:text-lg xl:leading-7 font-light text-slate-600 leading-6`}
                             dangerouslySetInnerHTML={{
                                 __html: post.pContent,
                             }}

@@ -13,7 +13,7 @@ const HomeLogos = () => {
                 <div className="relative flex items-center justify-center z-1 h-48 lg:h-60 overflow-hidden">
                     <div className="hidden lg:block lg:absolute">
                         <h1
-                            className={`flex ${outfit.className} text-gray-100 text-lg lg:text-[230px] uppercase font-extrabold`}
+                            className={`flex ${outfit.className} text-sky-50 text-lg lg:text-[230px] uppercase font-extrabold`}
                         >
                             Clientes
                         </h1>
@@ -34,7 +34,7 @@ const HomeLogos = () => {
                         </p>
                     </div>
                 </div>
-                <div className="mx-auto mt-10 grid max-w-lg grid-cols-2 items-center gap-x-8 gap-y-10 sm:max-w-xl sm:grid-cols-6 sm:gap-x-10 lg:mx-0 lg:max-w-none lg:grid-cols-5 px-6 lg:px-0">
+                <div className="mx-auto bg-white rounded-2xl mt-10 grid max-w-lg grid-cols-2 items-center gap-x-8 gap-y-10 sm:max-w-xl sm:grid-cols-6 sm:gap-x-10 lg:mx-0 lg:max-w-none lg:grid-cols-5 px-6 lg:px-0">
                     <CldImage
                         src="https://res.cloudinary.com/dtgka7xno/image/upload/v1678791269/Logos/ITC-Logo_c5qmfm.png"
                         width={400}

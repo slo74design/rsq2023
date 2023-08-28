@@ -5,10 +5,6 @@ const outfit = Outfit({
     weight: ["100", "300", "700", "800"],
     subsets: ["latin"],
 });
-const inter = Inter({
-    weight: ["100", "200", "700"],
-    subsets: ["latin"],
-});
 
 const HomeStats = () => {
     return (
