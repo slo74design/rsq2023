@@ -44,7 +44,7 @@ const Header = () => {
                         </button>
                     </div>
                 </div>
-                <Link href={process.env.NEXT_PUBLIC_FRONTEND_URL}>
+                <Link href="/">
                     <CldImage
                         src="https://res.cloudinary.com/dtgka7xno/image/upload/v1685798936/rsqweb/squid_s9elbo.png"
                         width={70}
@@ -86,7 +86,7 @@ const Header = () => {
                                 />
                             </button>
                         </div>
-                        <Link href={process.env.NEXT_PUBLIC_FRONTEND_URL}>
+                        <Link href="/">
                             <CldImage
                                 src="https://res.cloudinary.com/dtgka7xno/image/upload/v1685798936/rsqweb/squid_s9elbo.png"
                                 width={70}

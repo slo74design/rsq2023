@@ -48,7 +48,7 @@ export default function SlugPage({ post }) {
             };
 
             const callApi = await fetch(
-                `${process.env.NEXT_PUBLIC_FRONTEND_URL}/api/subscribersForm`,
+                `${process.env.WORDPRESS_API_URL}/api/subscribersForm`,
                 {
                     method: "POST",
                     body: JSON.stringify({ formData }),
