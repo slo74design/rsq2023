@@ -44,7 +44,7 @@ const HomeCalculadora = ({ title = "Calcúla tu presupuesto web" }) => {
             <div className="relative flex items-center justify-center z-1 h-48 lg:h-72 overflow-hidden">
                 <div className="hidden lg:block absolute">
                     <h1
-                        className={`flex ${outfit.className} text-gray-100 text-lg lg:text-[230px] uppercase font-extrabold`}
+                        className={`flex ${outfit.className} text-rsq-300/10 text-lg lg:text-[230px] uppercase font-extrabold`}
                     >
                         Calculadora
                     </h1>

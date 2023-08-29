@@ -43,7 +43,7 @@ const serv = [
     {
         id: 5,
         name: "Generación de contenido",
-        bgColor: "bg-rsq-300",
+        bgColor: "bg-rsq-350",
         category: "Visibilidad",
         initials:
             "https://res.cloudinary.com/dtgka7xno/image/upload/v1689500054/rsqweb/pres-mobile_pdhedh.svg",
@@ -51,7 +51,7 @@ const serv = [
     {
         id: 6,
         name: "Traducciones profesionales",
-        bgColor: "bg-rsq-300",
+        bgColor: "bg-rsq-350",
         category: "Visibilidad",
         initials:
             "https://res.cloudinary.com/dtgka7xno/image/upload/v1689500054/rsqweb/pres-mobile_pdhedh.svg",
@@ -59,7 +59,7 @@ const serv = [
     {
         id: 7,
         name: "Optimización de contenido SEO",
-        bgColor: "bg-rsq-300",
+        bgColor: "bg-rsq-350",
         category: "Visibilidad",
         initials:
             "https://res.cloudinary.com/dtgka7xno/image/upload/v1689500054/rsqweb/pres-mobile_pdhedh.svg",
@@ -108,7 +108,7 @@ const HomeServicios = () => {
             <div className="relative flex items-center justify-center z-1 h-48 lg:h-72 overflow-hidden">
                 <div className="hidden lg:block absolute">
                     <h1
-                        className={`flex ${outfit.className} text-sky-200/30 text-lg lg:text-[230px] uppercase font-extrabold`}
+                        className={`flex ${outfit.className} text-rsq-300/10 text-lg lg:text-[230px] uppercase font-extrabold`}
                     >
                         Soluciones
                     </h1>

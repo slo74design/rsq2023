@@ -29,7 +29,7 @@ const Headline = () => {
                 <div className="flex justify-start items-center w-full lg:h-16 xl:h-24">
                     <div className="lg:w-3/5 h-full bg-rsq-300 flex justify-center items-center">
                         <h1
-                            className={`${outfit.className} text-rsq-100 text-lg lg:text-2xl xl:text-4xl font-extrabold tracking-wide uppercase`}
+                            className={`${outfit.className} text-white text-lg lg:text-2xl xl:text-4xl font-extrabold tracking-wide uppercase`}
                         >
                             para wordpress y shopify lovers
                         </h1>

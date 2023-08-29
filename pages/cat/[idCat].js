@@ -8,8 +8,8 @@ import { gql } from "@apollo/client";
 import { CldImage } from "next-cloudinary";
 
 import PublicLayout from "@/layouts/PublicLayout";
+import HomeListPosts from "@/components/public/Home-ListPosts";
 import HomeCalculadora from "@/components/public/Home-Calculadora";
-import { SingleFaqs } from "@/components/public/Single-Faqs";
 
 import { getPostByUri } from "@/lib/getPostByUri";
 
@@ -27,13 +27,13 @@ const inter = Inter({
 import * as ga from "../../lib/ga";
 import { getPostsByCatId } from "@/lib/getPostByCatId";
 import { getAllCats } from "@/lib/getAllCats";
-import HomeListPosts from "@/components/public/Home-ListPosts";
 
 function classNames(...classes) {
     return classes.filter(Boolean).join(" ");
 }
 
 export default function SlugCat({ post }) {
+    console.log(post);
     return (
         <div>
             <Head>
@@ -62,8 +62,9 @@ export default function SlugCat({ post }) {
                 <link rel="icon" href="/favicon.ico" />
             </Head>
             <PublicLayout>
-                <div className="px-6 py-10 lg:py-24 lg:px-8 postTemplate">
+                <div className="px-6 py-10 lg:px-8">
                     <HomeListPosts posts={post} />
+                    <HomeCalculadora />
                 </div>
             </PublicLayout>
         </div>

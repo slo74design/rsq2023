@@ -35,9 +35,25 @@ const HomeListPosts = ({ posts }) => {
     if (posts.length === 0)
         return (
             <div className="relative max-w-5xl mx-auto my-10 xl:my-20 px-6 lg:px-8 xl:px-0">
-                <div className="flex justify-center items-center">
-                    <p>No hay soluciones </p>
-                </div>
+                <Link
+                    href="/posts"
+                    className="flex flex-col justify-center items-center"
+                >
+                    <CldImage
+                        src="https://res.cloudinary.com/dtgka7xno/image/upload/v1693291206/rsqweb/notFound_ttlpph.png"
+                        width={200}
+                        height={200}
+                        priority
+                        alt="RemoteSquid - solucion web no encontrada"
+                        className="w-24 h-24"
+                    />
+                    <p className="mt-5 text-lg text-slate-600 font-light">
+                        Lo sentimos, no hay ninguna solución creada.
+                    </p>
+                    <p className="text-lg text-slate-600 font-light">
+                        Prueba a buscarlo aquí.
+                    </p>
+                </Link>
                 <HomeRsq />
             </div>
         );
@@ -51,7 +67,7 @@ const HomeListPosts = ({ posts }) => {
                             Solución #{post.pId}
                         </span>
                         <h3
-                            className={`${outfit.className} font-extrabold text-rsq-100 text-2xl leading-7 lg:text-3xl my-0 pb-3 border-b border-b-slate-200`}
+                            className={`${outfit.className} font-bold text-rsq-100 text-2xl leading-6 lg:text-2xl my-0 pb-3 border-b border-b-slate-200`}
                         >
                             {post.pTitle}
                         </h3>

@@ -15,7 +15,8 @@ module.exports = {
                 rsq: {
                     100: "#1C3144",
                     200: "#FC4850",
-                    300: "#DBF4AD",
+                    300: "#c6b38e",
+                    350: "#DBF4AD", // Old green
                     400: "#1B998B",
                     500: "#FFFDFD",
                     600: "#FF8F94",

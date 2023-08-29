@@ -13,7 +13,7 @@ const HomeLogos = () => {
                 <div className="relative flex items-center justify-center z-1 h-48 lg:h-60 overflow-hidden">
                     <div className="hidden lg:block lg:absolute">
                         <h1
-                            className={`flex ${outfit.className} text-sky-50 text-lg lg:text-[230px] uppercase font-extrabold`}
+                            className={`flex ${outfit.className} text-rsq-300/10 text-lg lg:text-[230px] uppercase font-extrabold`}
                         >
                             Clientes
                         </h1>
