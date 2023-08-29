@@ -94,8 +94,8 @@ export default function Contact() {
                         </div>
                     </div>
                     <div className="basis-4/12">
-                        <Image
-                            src="/images/deal.png"
+                        <CldImage
+                            src="https://res.cloudinary.com/dtgka7xno/image/upload/v1693322282/rsqweb/deal_xalbo8.png"
                             width={400}
                             height={400}
                             priority

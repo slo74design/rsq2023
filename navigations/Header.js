@@ -4,6 +4,7 @@ import { Dialog } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import { CldImage } from "next-cloudinary";
 import Link from "next/link";
+import { FaRegCommentDots } from "react-icons/fa";
 
 import { Outfit } from "next/font/google";
 const outfit = Outfit({ weight: ["100", "800"], subsets: ["latin"] });
@@ -59,8 +60,7 @@ const Header = () => {
                         href="/contact"
                         className="text-sm font-semibold leading-6 text-gray-900"
                     >
-                        Habla con nosotros{" "}
-                        <span aria-hidden="true">&rarr;</span>
+                        <FaRegCommentDots className="w-6 h-6" />
                     </Link>
                 </div>
             </nav>
@@ -97,12 +97,12 @@ const Header = () => {
                             />
                         </Link>
                         <div className="flex flex-1 justify-end">
-                            <a
-                                href="#"
+                            <Link
+                                href="/contact"
                                 className="text-sm font-semibold leading-6 text-gray-900"
                             >
-                                Log in <span aria-hidden="true">&rarr;</span>
-                            </a>
+                                <FaRegCommentDots className="w-6 h-6" />
+                            </Link>
                         </div>
                     </div>
                     <div className="mt-6 space-y-2">
