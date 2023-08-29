@@ -26,7 +26,9 @@ const SocialShareIcons = ({ detailPost }) => {
             <FacebookShareButton
                 quote={detailPost.pTitle}
                 hashtag="#escapada"
-                url={detailPost.pUri}
+                url={process.env.NEXT_PUBLIC_FRONTEND_URL.concat(
+                    detailPost.pUri
+                )}
                 className="mr-2"
                 onClick={() => {
                     ga.event({
@@ -45,7 +47,9 @@ const SocialShareIcons = ({ detailPost }) => {
                 hashtags={["disenoweb, rsqweb"]}
                 via="remotesquid"
                 related={["rsqweb"]}
-                url={detailPost.pUri}
+                url={process.env.NEXT_PUBLIC_FRONTEND_URL.concat(
+                    detailPost.pUri
+                )}
                 className="mr-2"
                 onClick={() => {
                     ga.event({
@@ -61,7 +65,9 @@ const SocialShareIcons = ({ detailPost }) => {
             </TwitterShareButton>
             <LineShareButton
                 title={detailPost.pTitle}
-                url={detailPost.pUri}
+                url={process.env.NEXT_PUBLIC_FRONTEND_URL.concat(
+                    detailPost.pUri
+                )}
                 className="mr-2"
                 onClick={() => {
                     ga.event({
@@ -77,7 +83,9 @@ const SocialShareIcons = ({ detailPost }) => {
             </LineShareButton>
             <TelegramShareButton
                 title={detailPost.pTitle}
-                url={detailPost.pUri}
+                url={process.env.NEXT_PUBLIC_FRONTEND_URL.concat(
+                    detailPost.pUri
+                )}
                 className="mr-2"
                 onClick={() => {
                     ga.event({
@@ -93,7 +101,9 @@ const SocialShareIcons = ({ detailPost }) => {
             </TelegramShareButton>
             <WhatsappShareButton
                 title={detailPost.pTitle}
-                url={detailPost.pUri}
+                url={process.env.NEXT_PUBLIC_FRONTEND_URL.concat(
+                    detailPost.pUri
+                )}
                 className="mr-2"
                 onClick={() => {
                     ga.event({
@@ -110,7 +120,9 @@ const SocialShareIcons = ({ detailPost }) => {
             <EmailShareButton
                 subject="Escapada interesante en depaseopormanhattan.com"
                 body={detailPost.pTitle}
-                url={detailPost.pUri}
+                url={process.env.NEXT_PUBLIC_FRONTEND_URL.concat(
+                    detailPost.pUri
+                )}
                 className="mr-2"
             >
                 <EmailIcon size={36} round={true} />

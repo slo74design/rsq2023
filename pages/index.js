@@ -8,7 +8,6 @@ import HomeScrollText from "@/components/public/Home-ScrollText";
 import HomeCalculadora from "@/components/public/Home-Calculadora";
 import HomeCtaRx from "@/components/public/Home-CtaRx";
 import HomeListPosts from "@/components/public/Home-ListPosts";
-import HomeStats from "@/components/public/Home-Stats";
 import HomeLogos from "@/components/public/Home-Logos";
 import Headline from "@/components/public/Headline";
 import HomeRsq from "@/components/public/Home-RSQ";
@@ -43,10 +42,9 @@ export default function Home({ wpServices }) {
                 <Headline />
                 <HomeListPosts posts={wpServices} />
                 <HomeRsq />
-                {/* <HomeScrollText /> */}
+                <HomeScrollText />
                 <HomeCtaRx />
                 <HomeCalculadora title="El presupuesto para tu próxima web" />
-                {/* <HomeStats /> */}
                 <HomeLogos />
             </PublicLayout>
         </div>
