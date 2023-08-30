@@ -36,13 +36,13 @@ const calcserv = [
 
 const HomeRsq = () => {
     return (
-        <div className="my-10 lg:my-20">
-            <div className="relative flex items-center justify-center z-1 h-48 lg:h-72 overflow-hidden">
+        <div className="my-10">
+            <div className="relative flex items-center justify-center z-1 h-80 overflow-hidden">
                 <div className="hidden lg:block absolute">
                     <h1
                         className={`flex ${outfit.className} text-rsq-300/10 text-lg lg:text-[230px] uppercase font-extrabold`}
                     >
-                        RemoteSquid
+                        Objetivos
                     </h1>
                 </div>
                 <div className="absolute mx-auto top-0 sm:top-24 left-0 right-0 text-left lg:text-center">

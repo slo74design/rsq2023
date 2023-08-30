@@ -41,7 +41,7 @@ const calcserv = [
 const HomeCalculadora = ({ title = "Calcúla tu presupuesto web" }) => {
     return (
         <div className="my-10 lg:my-20">
-            <div className="relative flex items-center justify-center z-1 h-48 lg:h-72 overflow-hidden">
+            <div className="relative flex items-center justify-center z-1 h-72 overflow-hidden">
                 <div className="hidden lg:block absolute">
                     <h1
                         className={`flex ${outfit.className} text-rsq-300/10 text-lg lg:text-[230px] uppercase font-extrabold`}
@@ -58,10 +58,10 @@ const HomeCalculadora = ({ title = "Calcúla tu presupuesto web" }) => {
                     <p
                         className={`${outfit.className} mt-2 px-6 lg:px-0 text-lg sm:text-xl leading-6 sm:leading-7 font-light text-slate-600 max-w-full sm:max-w-3xl mx-auto`}
                     >
-                        Las estimaciones tienen en cuenta los costes de
-                        desarrollo inicial, los gastos mensuales del CMS y
-                        servidores, un diseño Premium y algunas apps de
-                        seguridad y mantenimiento.
+                        Se tratan de estimaciones anuales que tienen en cuenta
+                        los costes de desarrollo, nuevas implementaciones,
+                        gastos mensuales, el coste de un diseño Premium,
+                        apps/plugin, seguridad y mantenimiento.
                     </p>
                 </div>
             </div>
@@ -107,7 +107,8 @@ const HomeCalculadora = ({ title = "Calcúla tu presupuesto web" }) => {
                             <ul>
                                 <li className="mt-0 text-sm leading-5 text-green-100">
                                     ⬆ El rendimiento, la velocidad de carga
-                                    superrápida y el SEO friendly.
+                                    superrápida y el SEO friendly. A partir del
+                                    segundo año, los costes son casi nulos.
                                 </li>
                                 <li className="mt-1 text-sm leading-5 text-green-100">
                                     ⬇ El gasto del desarrollo inicial y el
@@ -139,7 +140,8 @@ const HomeCalculadora = ({ title = "Calcúla tu presupuesto web" }) => {
                                 <li className="mt-1 text-sm leading-5 text-green-100">
                                     ⬇ Costes post-lanzamiento elevados y
                                     frecuentes, mantenimiento, velocidad de
-                                    carga, SEO
+                                    carga, SEO. A partir del segundo año, los
+                                    costes pueden reducirse del 30%.
                                 </li>
                             </ul>
                         </div>
@@ -165,7 +167,9 @@ const HomeCalculadora = ({ title = "Calcúla tu presupuesto web" }) => {
                                 </li>
                                 <li className="mt-1 text-sm leading-5 text-green-100">
                                     ⬇ La cuota mensual de la plataforma y los
-                                    costes elevados de integración de una app.
+                                    costes elevados de integración de una app. A
+                                    partir del segundo año, los costes pueden
+                                    reducirse del 50%.
                                 </li>
                             </ul>
                         </div>

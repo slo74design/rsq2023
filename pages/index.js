@@ -11,6 +11,7 @@ import HomeListPosts from "@/components/public/Home-ListPosts";
 import HomeLogos from "@/components/public/Home-Logos";
 import Headline from "@/components/public/Headline";
 import HomeRsq from "@/components/public/Home-RSQ";
+import HomeWelcome from "@/components/public/Home-Welcome";
 
 export const metadata = {
     title: "#rsqweb, agencia leader en diseños web superrápidos para Wordpress y Shopify lovers",
@@ -40,11 +41,12 @@ export default function Home({ wpServices }) {
             </Head>
             <PublicLayout>
                 <Headline />
+                <HomeWelcome />
                 <HomeListPosts posts={wpServices} />
                 <HomeRsq />
                 <HomeScrollText />
                 <HomeCtaRx />
-                <HomeCalculadora title="El presupuesto para tu próxima web" />
+                <HomeCalculadora title="¿Cuanto puedo gastarme en un año?" />
                 <HomeLogos />
             </PublicLayout>
         </div>

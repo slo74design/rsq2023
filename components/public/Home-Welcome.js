@@ -37,7 +37,7 @@ const pics = [
 const HomeWelcome = () => {
     return (
         <>
-            <div className="flex justify-center items-center relative z-1 h-72 sm:h-80 overflow-x-hidden">
+            <div className="flex justify-center items-center relative z-1 h-80 md:h-60 xl:h-80 overflow-x-hidden">
                 <div className="hidden lg:block absolute">
                     <h1
                         className={`flex ${outfit.className} text-gray-100 text-lg lg:text-[250px] uppercase font-extrabold`}
@@ -45,7 +45,7 @@ const HomeWelcome = () => {
                         RemoteSquid
                     </h1>
                 </div>
-                <div className="absolute mx-auto top-8 sm:top-36 left-0 right-0 text-left lg:text-center">
+                <div className="absolute mx-auto top-8 md:top-12 xl:top-36 left-0 right-0 text-left lg:text-center">
                     <h2
                         className={`${outfit.className} text-3xl lg:text-5xl px-6 lg:px-0 sm:leading-none text-fill-black font-extrabold tracking-normal uppercase text-rsq-900`}
                     >
@@ -54,13 +54,14 @@ const HomeWelcome = () => {
                     <p
                         className={`${outfit.className} mt-2 px-6 lg:px-0 text-lg sm:text-xl leading-6 sm:leading-7 text-slate-700 font-extralight max-w-full sm:max-w-3xl mx-auto`}
                     >
-                        Desarrollamos paginas webs que te ayudan a alcanzar tus
-                        objetivos.
-                        <br className="hidden lg:block" />
-                        Diseñamos y desarrollamos webs que te ayudan a vender
-                        más.
-                        <br className="hidden lg:block" />
-                        Te ayudamos a tener una presencia online de éxito.
+                        RemoteSquid es una agencia web innovadora y
+                        no-confirmista.
+                        <br className="lg:block" />
+                        Si quieres conseguir tus objetivos, debes confiar en
+                        agencias web como la nuestra.
+                        <br className="lg:block" />
+                        Nuestras soluciones son originales, minimalistas y
+                        creativas. Palabra de 🦑.
                     </p>
                 </div>
             </div>
