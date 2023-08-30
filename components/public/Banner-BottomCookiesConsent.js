@@ -27,7 +27,10 @@ export default function BannerBottomCookiesConsent() {
                     El sitio web de RemoteSquid utiliza cookies para mejorar la
                     experiencia del usuario y poder acceder al SEO coworkplace.
                     See our{" "}
-                    <a href="#" className="font-semibold text-indigo-600">
+                    <a
+                        href="/cookies"
+                        className="font-semibold text-indigo-600"
+                    >
                         cookie policy
                     </a>
                     .
