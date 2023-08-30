@@ -23,6 +23,11 @@ const menu = [
     },
     {
         id: 3,
+        name: "Aviso Legal",
+        url: "/avisolegal",
+    },
+    {
+        id: 3,
         name: "Cookies",
         url: "/cookies",
     },

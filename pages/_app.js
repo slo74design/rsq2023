@@ -7,6 +7,7 @@ import "@/styles/globals.css";
 
 // Integration con GA4
 import * as ga from "../lib/ga";
+import { CookiesProvider } from "@/context/cookiesProvider";
 
 export default function App({ Component, pageProps }) {
     const router = useRouter();
@@ -40,7 +41,9 @@ export default function App({ Component, pageProps }) {
                 }}
             />
             <ApolloProvider client={client}>
-                <Component {...pageProps} />
+                <CookiesProvider>
+                    <Component {...pageProps} />
+                </CookiesProvider>
             </ApolloProvider>
         </>
     );

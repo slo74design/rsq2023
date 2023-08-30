@@ -1,15 +1,19 @@
-import React from "react";
+import React, { useContext } from "react";
 import Head from "next/head";
 import Header from "@/navigations/Header";
 import MainFooter from "@/navigations/MainFooter";
 
+import CookiesContext from "@/context/cookiesProvider";
+
 import { Inter } from "next/font/google";
+import BannerBottomCookiesConsent from "@/components/public/Banner-BottomCookiesConsent";
 const inter = Inter({
     weight: ["100", "200", "300", "400", "600", "700", "800"],
     subsets: ["latin"],
 });
 
-const PublicLayout = ({ children, metadata }) => {
+const PublicLayout = ({ children }) => {
+    const { cookiesConsent } = useContext(CookiesContext);
     return (
         <>
             <Head>
@@ -46,6 +50,9 @@ const PublicLayout = ({ children, metadata }) => {
                 <Header />
                 {children}
                 <MainFooter />
+                {(cookiesConsent === "nil" ||
+                    cookiesConsent === undefined ||
+                    cookiesConsent === "") && <BannerBottomCookiesConsent />}
             </div>
         </>
     );
