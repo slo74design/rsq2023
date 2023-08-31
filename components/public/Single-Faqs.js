@@ -2,24 +2,30 @@ import React from "react";
 import { Disclosure } from "@headlessui/react";
 import { MinusSmallIcon, PlusSmallIcon } from "@heroicons/react/24/outline";
 
-import { Inter, Outfit } from "next/font/google";
+import { Outfit } from "next/font/google";
 const outfit = Outfit({
     weight: ["100", "300", "600", "700", "800"],
-    subsets: ["latin"],
-});
-const inter = Inter({
-    weight: ["100", "200", "300", "500"],
     subsets: ["latin"],
 });
 
 const faqs = [
     {
-        question: "What format are these icons?",
-        answer: "The icons are in SVG (Scalable Vector Graphic) format. They can be imported into your design tool of choice and used directly in code.",
+        question: "Quiero montar mi pagina web con #rsqweb desde cero.",
+        answer: "Nuestro equipo estará encantado de proporcionarte y acompañarte durante todo el proceso de estrategia, diseño y puesta en marcha.",
     },
     {
-        question: "Can I use the icons at different sizes?",
-        answer: "Yes. The icons are drawn on a 24 x 24 pixel grid, but the icons can be scaled to different sizes as needed. We don't recommend going smaller than 20 x 20 or larger than 64 x 64 to retain legibility and visual balance.",
+        question:
+            "Tengo mi blog en Wordpress. ¿Puedo integrar vuestro diseño #rsqweb sin parar la web?",
+        answer: "La respuesta es Sí. Nosotros trabajaremos el nuevo diseño, según tus necesidades, en nuestro servidor y luego nos encargaremos de moverlo cuando está todos listo.",
+    },
+    {
+        question:
+            "¿Cuantos días son necesarios para desarrollar e integrar un diseño #rsqweb?",
+        answer: "Nuestro equipo necesitará un minimo de 30 días para completar la integración y puesta en marcha.",
+    },
+    {
+        question: "Busco alguién que pueda traducir toda mi pagina web.",
+        answer: "Nuestro equipo está especializado y profesionalmente preparado para generar y optimizar contenido para el posicionamiento en los buscadores. No utilizamos herramientas de traducción automatica, y tampoco IA.",
     },
 ];
 
@@ -29,7 +35,7 @@ export const SingleFaqs = () => {
             <h2
                 className={`${outfit.className} text-2xl font-semibold text-rsq-100`}
             >
-                Tips para Entrepreneurs
+                Preguntas frecuentes
             </h2>
             <dl className="mt-10 space-y-6 divide-y divide-gray-900/10">
                 {faqs.map((faq) => (
@@ -39,7 +45,7 @@ export const SingleFaqs = () => {
                                 <dt>
                                     <Disclosure.Button className="flex w-full items-start justify-between text-left text-gray-900">
                                         <span
-                                            className={`${inter.className} text-base font-medium leading-7 text-rsq-400`}
+                                            className={`text-base font-medium leading-7 text-rsq-400`}
                                         >
                                             {faq.question}
                                         </span>
@@ -63,7 +69,7 @@ export const SingleFaqs = () => {
                                     className="mt-2 pr-12"
                                 >
                                     <p
-                                        className={`${inter.className} font-light text-base lg:text-lg leading-7 text-rsq-900`}
+                                        className={`font-light text-base lg:text-lg leading-7 text-rsq-900`}
                                     >
                                         {faq.answer}
                                     </p>
